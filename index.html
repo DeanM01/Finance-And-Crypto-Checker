@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dean Analytics | Crypto Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <header class="dash-header">
+            <h2>Dean<span>Analytics</span></h2>
+            <div class="controls">
+                <label for="coin-select">Select Asset:</label>
+                <select id="coin-select">
+                    <option value="bitcoin">Bitcoin (BTC)</option>
+                    <option value="ethereum">Ethereum (ETH)</option>
+                    <option value="solana">Solana (SOL)</option>
+                    <option value="cardano">Cardano (ADA)</option>
+                </select>
+            </div>
+        </header>
+
+        <section class="metrics-grid">
+            <div class="card">
+                <h3>Current Price</h3>
+                <p id="current-price" class="metric-value">$0.00</p>
+            </div>
+
+            <div class="card">
+                <h3>24h Price Change</h3>
+                <p id="price-change" class="metric-value">0.00%</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Volume (USD)</h3>
+                <p id="market-volume" class="metric-value">$0.00</p>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <h3>30-Day Price Trend</h3>
+            <div class="chart-wrapper">
+                <canvas id="cryptoChart"></canvas>
+            </div>
+        </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
