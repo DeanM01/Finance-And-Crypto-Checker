@@ -1,6 +1,6 @@
 # Finance-And-Crypto-Checker
 A sleek and responsivevweb application to track and pull the current market price and calculates the total volume directly from the CoinGecko API this dashboard allows users to dynamically swap between primary digital assets and view critical data points 
-live website https://financeandcryptochecker.netlify.app/
+[live website] https://financeandcryptochecker.netlify.app/
 
 Key Features
 
