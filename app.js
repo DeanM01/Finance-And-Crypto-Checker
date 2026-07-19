@@ -97,27 +97,3 @@ function renderLineChart(labels, dataPoints, coinName) {
 // --- Event Listeners ---
 coinSelect.addEventListener("change", (e) => updateDashboard(e.target.value));
 updateDashboard("bitcoin");
-
-// Get references to our new search HTML elements
-//const searchInput = document.getElementById("coin-search");
-//const searchButton = document.getElementById("search-btn");
-
-// Function to handle the search execution
-//function handleSearch() {
-    // Grab the text, convert it to lowercase, and strip out empty spaces
-//    const query = searchInput.value.toLowerCase().trim();
-    
-//    if (query !== "") {
-//        updateDashboard(query);
-//    }
-//}
-
-// Trigger search when clicking the button
-//searchButton.addEventListener("click", handleSearch);
-
-// Trigger search when pressing the 'Enter' key inside the input box
-//searchInput.addEventListener("keypress", (event) => {
- //   if (event.key === "Enter") {
-  //      handleSearch();
- //   }
-//});
